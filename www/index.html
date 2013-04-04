@@ -1,0 +1,395 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Abbey Pain Scale</title>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="mystyle.css" rel="stylesheet" type="text/css"/>
+ <script src="iscroll.js" type="text/javascript"></script>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="myjava2.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="storedata.js"></script>
+
+<link rel="apple-touch-icon" href="large_plaster_updated.png" />
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1, maximum-scale=1, 
+user-scalable=no">
+
+</head> 
+<body> 
+<div id="container">
+<div data-role="page" id="page" data-theme="a">
+	<div class="header" data-role="header">
+    <h1>Smärta</h1>
+    <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">	
+		<p><strong>För bedömning av smärta hos personer som har svårt att beskriva sin smärta. Observera personen, helst i rörelse och besvara frågorna.</strong></p> 
+        <a href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true" class="clearform" onclick="clearform();">Gör smärtskattningsbedömning</a> 
+    </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		  	<li><a href="#" class="ui-btn-active ui-state-persist tworowsbutton">Abbey Pain Scale</a></li>
+          	<li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-theme="a">
+	<div class="header" data-role="header">
+    <h1>Smärta</h1>
+    <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">		
+            <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+    	<legend id="leg1"><h3>Röstuttryck/ljud</h3> - t ex gnyr, jämrar sig eller låter.</legend>
+        	<input class="questions" type="radio" name="radiobutton1" id="R0" value="0" />
+         	<label for="R0">0. Inte alls</label>
+            
+         	<input class="questions" type="radio" name="radiobutton1" id="R1" value="1" />
+         	<label for="R1">1. Sällan</label>
+
+         	<input class="questions" type="radio" name="radiobutton1" id="R2" value="2"  />
+         	<label for="R2">2. Ibland</label>
+
+         	<input class="questions" type="radio" name="radiobutton1" id="R3" value="3"  />
+         	<label for="R3">3. Ofta</label>
+    </fieldset>
+    
+        </div>
+       <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Bakåt</a>
+       <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Nästa</a>
+        
+    </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		  	<li><a href="#page" class="ui-btn-active ui-state-persist">Abbey Pain Scale</a></li>
+          	<li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div>
+</div>
+        <div data-role="page" id="page3" data-theme="a">
+	<div class="header" data-role="header">
+   <h1>Smärta</h1>
+   <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">
+                <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+    	<legend id="leg2"><h3>Ansiktsuttryck</h3> - T ex spänd, rynkar näsan, grimaserar.</legend>
+        	<input class="questions" type="radio" name="radiobutton2" id="R5" value="0" />
+         	<label for="R5">0. Inte alls</label>
+            
+         	<input class="questions" type="radio" name="radiobutton2" id="R6" value="1" />
+         	<label for="R6">1. Sällan</label>
+
+         	<input class="questions" type="radio" name="radiobutton2" id="R7" value="2"  />
+         	<label for="R7">2. Ibland</label>
+
+         	<input class="questions" type="radio" name="radiobutton2" id="R8" value="3"  />
+         	<label for="R8">3. Ofta</label>
+    </fieldset>
+    
+        </div>
+
+        <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Bakåt</a>
+       <a href="#page4" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Nästa</a>
+          </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		  	<li><a href="#page" class="ui-btn-active ui-state-persist">Abbey Pain Scale</a></li>
+            <li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div>
+</div>
+        <div data-role="page" id="page4" data-theme="a">
+	<div class="header" data-role="header">
+    <h1>Smärta</h1>
+    <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">
+                    <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+    	<legend id="leg3"><h3>Förändrat kroppsspråk</h3> - tex rastlös, vaggar, skyddar en kroppsdel eller ihopkrupen.</legend>
+        	<input class="questions" type="radio" name="radiobutton3" id="R9" value="0" />
+         	<label for="R9">0. Inte alls</label>
+            
+         	<input class="questions" type="radio" name="radiobutton3" id="R10" value="1" />
+         	<label for="R10">1. Lite</label>
+
+         	<input class="questions" type="radio" name="radiobutton3" id="R11" value="2"  />
+         	<label for="R11">2. Måttligt</label>
+
+         	<input class="questions" type="radio" name="radiobutton3" id="R12" value="3"  />
+         	<label for="R12">3. Mycket</label>
+    </fieldset>
+    
+        </div>
+
+            <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Bakåt</a>
+       <a href="#page5" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Nästa</a>
+          </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		  	<li><a href="#page" class="ui-btn-active ui-state-persist">Abbey Pain Scale</a></li>
+          	<li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div>
+</div>
+        <div data-role="page" id="page5" data-theme="a">
+	<div class="header" data-role="header">
+    <h1>Smärta</h1>
+    <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">
+                        <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+    	<legend id="leg4"><h3>Förändrat beteende</h3> - t ex ökad förvirring, matvägran, ökad eller minskad kroppsaktivitet.</legend>
+        	<input class="questions" type="radio" name="radiobutton4" id="R13" value="0" />
+         	<label for="R13">0. Inte alls</label>
+            
+         	<input class="questions" type="radio" name="radiobutton4" id="R14" value="1" />
+         	<label for="R14">1. Lite</label>
+
+         	<input class="questions" type="radio" name="radiobutton4" id="R15" value="2"  />
+         	<label for="R15">2. Måttligt</label>
+
+         	<input class="questions" type="radio" name="radiobutton4" id="R16" value="3"  />
+         	<label for="R16">3. Mycket</label>
+    </fieldset>
+    
+        </div>
+        <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Bakåt</a>
+       <a href="#page6" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Nästa</a>
+          </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		  	<li><a href="#page" class="ui-btn-active ui-state-persist">Abbey Pain Scale</a></li>
+            <li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div>
+</div>
+        <div data-role="page" id="page6" data-theme="a">
+	<div class="header" data-role="header">
+    <h1>Smärta</h1>
+    <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">
+                            <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+    	<legend id="leg5"><h3>Fysiologiska förändringar</h3> - t ex förändrad kroppstemperatur, puls/blodtryck, svettningar, rodnad/blekhet i hyn.</legend>
+        	<input class="questions" type="radio" name="radiobutton5" id="R17" value="0" />
+         	<label for="R17">0. Inte alls</label>
+            
+         	<input class="questions" type="radio" name="radiobutton5" id="R18" value="1" />
+         	<label for="R18">1. Lite</label>
+
+         	<input class="questions" type="radio" name="radiobutton5" id="R19" value="2"  />
+         	<label for="R19">2. Måttligt</label>
+
+         	<input class="questions" type="radio" name="radiobutton5" id="R20" value="3"  />
+         	<label for="R20">3. Mycket</label>
+    </fieldset>
+    
+        </div>
+        <a data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Bakåt</a>
+       <a href="#page7" data-role="button" data-icon="arrow-r" data-iconpos="right" data-inline="true">Nästa</a>
+          </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		  	<li><a href="#page" class="ui-btn-active ui-state-persist">Abbey Pain Scale</a></li>
+          	<li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div>
+</div>
+        <div data-role="page" id="page7" data-theme="a">
+	<div class="header" data-role="header">
+    <h1>Smärta</h1>
+    <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">
+                                <div data-role="fieldcontain">
+    <fieldset data-role="controlgroup">
+    	<legend id="leg6"><h3>Kroppsliga förändringar</h3> - t ex rivet skinn, tryckskador, kontrakturer eller andra skador.</legend>
+        	<input class="questions" type="radio" name="radiobutton6" id="R21" value="0" />
+         	<label for="R21">0. Inte alls</label>
+            
+         	<input class="questions" type="radio" name="radiobutton6" id="R22" value="1" />
+         	<label for="R22">1. Lite</label>
+
+         	<input class="questions" type="radio" name="radiobutton6" id="R23" value="2"  />
+         	<label for="R23">2. Måttligt</label>
+
+         	<input class="questions" type="radio" name="radiobutton6" id="R24" value="3"  />
+         	<label for="R24">3. Mycket</label>
+    </fieldset>
+    
+        </div>
+         <a data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-rel="back">Bakåt</a>
+<a href="#dialog" class="button" id="validate" data-inline="true" name="result" data-theme="b" data-icon="check" data-iconpos="right" data-rel="dialog" data-transition="fade" data-role="button">Validera</a>
+          </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+		  	<li><a href="#page" class="ui-btn-active ui-state-persist">Abbey Pain Scale</a></li>
+          	<li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div>
+</div>
+<div data-role="page" id="page11" data-transition="slidedown" data-theme="a">
+  <div class="headersub" data-role="header">
+  <a class="backbtn" href="#" data-add-back-btn="true" data-rel="back" data-back-btn-theme="b">Bakåt</a>
+    <h3>Smärta</h3>
+    <img src="abslogga.png" height="65px" alt="logga" class="logga">
+  </div>
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>Vikten av god smärtlindring</h3>
+        <p>För att i livets slutskede ge såväl den sjuke som de närstående möjlighet till så god livskvalitet som möjligt är smärt- och symtomlindring högt prioriterat och en av de viktigaste uppgifterna för oss i vården. Det är angeläget att svårt sjuka patienter får veta att smärta kan lindras men också att total smärtfrihet inte går att lova. Studier har visat att smärta är vanligt oavsett vilken diagnos patienten har. Det är därför angeläget att tidigt upptäcka, förebygga och behandla smärta. Möjligheten att uppnå god smärtlindring ökar om smärtskattning sker på ett kontinuerligt och strukturerat sätt. Det är av största vikt att varje vårdenhet har en rutin för hur patienterna ska tillfrågas om vad som besvärar dem och i vilken grad. Personalen behöver även olika redskap för att bedöma smärta. För stöd och förslag till behandling av smärta hänvisas till Nationellt vårdprogram för palliativ vård (www.palliativ.se).</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Smärtdiagnostik</h3>
+        <p>Behandling av smärta ska baseras på den underliggande smärtmekanismen. Smärta bör därför analyseras på samma sätt oavsett orsak eller underliggande sjukdom. Det innebär att anamnes och smärtstatus bör leda fram till en bedömning om den fysiska smärtkomponenten är nociceptiv (vävnadsskadesmärta, det vill säga utgående från smärtstimulering av nociceptorer i vävnaden, eller om smärtan har sin grund i en skada eller dysfunktion i det perifera eller centrala nervsystemet, så kallad neuropatisk smärta (nervsmärta). Behandlingen skiljer sig mellan dessa smärtmekanismer.</p>
+        <p>I status inkluderas inspektion av berört område avseende rodnad och svullnad samt palpation för att undersöka eventuell värmeökning och ömhet talande för inflammation. Neurologisk status vid misstanke om neuropatisk smärtkomponent inkluderar undersökning av nervfunktion genom test av kyla, värme, smärta och lätt beröring. Denna smärtpatofysiologiska grund behöver sedan kompletteras med andra perspektiv som förekomst av smärtgenombrott eller annan variation av smärtans intensitet, smärtutlösande faktorer, effekt av tidigare insatt läkemedelsbehandling, psykologiska komponenter med oro och ångest samt eventuella biverkningar av behandlingen.</p>
+        <p>Ibland finns nociceptiv och neuropatisk smärta samtidigt och ibland är smärtan psykogen, existentiell eller idiopatisk. Orsaker till att smärtbehandlingen ibland inte fungerar kan vara obehandlad neuropatisk smärta, förekomst av genombrottssmärta trots bra grundläggande smärtlindring, psykologisk belastning, tidigare eller aktuell överkonsumtion av alkohol eller narkotika och kognitiv dysfunktion. Det är angeläget med samråd mellan minst två kollegor när insatt behandling inte ger tillfredsställande effekt. </p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Smärtanalys</h3>
+        <p>Följande anamnestiska parametrar och undersökningsfynd bör bedömas i en smärtanalys hos en patient i livets slutskede:</p>
+        <ul>
+        <li>Intensitet: vila, rörelse, smärtgenombrott</li>
+        <li>Tidsperspektiv: variation över dygnet, akut, nytillkommen, kronisk, smärtgenombrott</li>
+        <li>Utlösande faktorer: kända, okända, påverkbara</li>
+        <li>Lokalisation</li>
+        <li>Orsak: relation till aktuell sjukdom, cancerrelaterad, samtidig inflammation</li>
+        <li>Smärtstatus: smärtutbredning, sensibilitet, rodnad, svullnad, värmeökning, palpationsömhet</li>
+        <li>Smärtmekanism: nociceptiv, neuropatisk</li>
+        <li>Psykologisk påverkan: oro, ångest, stress, missbruk</li>
+        <li>Påverkan på livskvalitet: funktion, ADL, vardagliga aktiviteter</li>
+        <li>Behandling: grundbehandling, behandling vid behov, hjälper/hjälper inte</li>
+        <li>Biverkningar av insatt behandling: obstipation (förstoppning), illamående, trötthet eller annan kognitiv påverkan</li>
+        </ul>
+      </div>
+            <div data-role="collapsible">
+        <h3>Smärtskattning</h3>
+        <p>En förtroendefull och lugn dialog med patienten skapar förutsättning för en bra smärtanamnes och smärtskattning. Att som komplement använda sig av systematisk och upprepad skattning av smärta med hjälp av ett skattningsinstrument och efterföljande dokumentation förbättrar och kvalitetssäkrar smärtbehandlingen. Det är viktigt att patientens subjektiva skattning respekteras och dokumenteras eftersom det inte går att se på en patient hur ont han eller hon har. Flera studier visar att patienter skattar smärta högre än vårdpersonal. Detta i motsats till ångest där patienter tenderar att skatta ångestnivå lägre än när personalen gör skattningen. Smärtskattning med ett instrument möjliggör ett gemensamt språk avseende smärtintensitet och bedömning av effekt av insatt behandling. På detta sätt undviks också underdiagnostik av patientens smärta. Smärtlindring baserad på hur vårdpersonalen ”läser av” patientens smärta är den vanligaste orsaken till otillräcklig smärtlindring. Intensitetsskattning av smärta är en kvalitetsindikator såväl i Socialstyrelsens riktlinjer för cancervården som i många lokala vårdprogram och i kvalitetsuppföljningar.</p>
+        <p>
+        De idag vanligaste smärtskattningsinstrumenten är VAS (Visuell Analog Skala) och NRS (Numeric Rating Scale). Dessa kräver aktiv medverkan av personen och kan heller inte användas vid kognitivt nedsatt förmåga (t ex demens) eller där annan svårighet att kommunicera finns. Instrument som t.ex. Abbey Pain Scale är då ett bättre alternativ. Det finns även flera andra instrument som används i palliativ vård, exempelvis det sammansatta instrumentet ESAS (Edmonton Symptom Assessment Scale) som har tio parallella VAS skalor för smärta och andra symtom. 
+        </p>
+      </div>
+            <div data-role="collapsible">
+        <h3>Abbey Pain Scale</h3>
+        <p>Abbey Pain Scale är ett validerat instrument och har tagits fram för att bedöma smärta hos personer med demens i sent palliativt skede. Instrumentet bygger på vårdpersonalens observation och bedömning av patienten utifrån sex frågor som berör uttryckssätt, kroppsspråk, beteende och fysiologiska förändringar av t.ex. kroppstemperatur, puls eller blodtryck. Varje fråga graderas utifrån fyra olika svarsalternativ. Svarsalternativen genererar en poäng från 0-3 poäng, där 0 utgör normalstatus. Poängen summeras. Om totalpoängen blir 1-2 bedöms personen inte ha någon smärta. Vid högre poäng indelas smärtan i mild, medelsvår eller svår. Någon svensk valideringsstudie finns för närvarande inte men i avvaktan på en sådan bedöms detta instrument vara ett av de bättre att använda. </p>
+      </div>
+    </div>
+</div>
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#page">Abbey Pain Scale</a></li>
+            <li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li data-transition="slidedown"><a href="#page11" class="ui-btn-active ui-state-persist">Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+
+<div data-role="page" id="page12" data-transition="slidedown" data-theme="a">
+	<div class="headersub" data-role="header">
+    
+		<h1>Smärta</h1>
+        <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">	
+		<h3>Skapad av Svenska Palliativregistret. </h3>	
+	</div>
+        <div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#page">Abbey Pain Scale</a></li>
+            <li><a href="#page13" data-transition="slidedown">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown">Smärta</a></li>
+			<li><a href="#page12" class="ui-btn-active ui-state-persist" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+<div data-role="page" id="page13" data-transition="slidedown" data-theme="a">
+	<div class="headersub" data-role="header">
+    
+		<h1>Smärta</h1>
+        <img src="abslogga.png" height="65px" alt="logga" class="logga">
+	</div>
+	<div data-role="content">	
+		<h3>Sparade bedömningar - Glöm inte att journalföra dina bedömningar</h3>
+        <div class="results"><ul data-role="listview" id="resultlist"></ul></div>	
+	</div>
+        <div data-role="footer" data-id="foo1" data-position="fixed" data-tap-toggle="false">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#page" data-transition="slidedown">Abbey Pain Scale</a></li>
+            <li><a href="#" data-transition="slidedown" class="ui-btn-active ui-state-persist">Sparade</a></li>
+			<li><a href="#page11" data-transition="slidedown" >Smärta</a></li>
+			<li><a href="#page12" data-transition="slidedown">Om oss</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+<div data-role="dialog" id="dialog">
+    <div data-role="header">
+        <h1 id="headmessage"></h1>
+    </div>
+    <div data-role="content">
+        <p id="contentmessage"></p>
+<p id="contentmessage"></p>
+        	<table id="problemlistq"></table>
+        	<a href="#page11" data-role="button" data-rel="back" data-transition="fade" data-theme="b">OK</a><input type='text' id='txtName' placeholder='Minnesanteckning' /><a href='#page13' id='btnSave' data-theme="b" data-role="button" data-icon="check" data-iconpos="right">Spara bedömning</a>
+    </div>
+</div>​
+<div data-role="dialog" id="dialog2">
+    <div data-role="header">
+        <h1 id="headmessage"></h1>
+    </div>
+    <div data-role="content">
+        <p id="contentmessagespec"></p>
+        	<div id="problemlistqspec"></div>
+        	
+    </div>
+</div>​
+</div>
+</body>
+</html>
